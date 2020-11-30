@@ -1,0 +1,131 @@
+html {
+    height:100%;
+}
+
+body {
+    height: 100%;
+    background-image:url('mars-planet-animation-6.gif');
+    background-color: black;
+}
+
+.img, img {
+    width:100%;
+    max-width:810px;
+    height:auto;
+    image-rendering: auto;
+    border-radius: 6px;
+    padding-right: 75px;
+}
+
+.jumbotron {
+    position:fixed;
+    z-index:2;
+    opacity: .90;
+    margin-bottom:0px;
+    height:150px;
+    width:100%;
+    max-width:1350px;
+    background-color: ivory;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top:5px;
+    margin-bottom:5px;
+    color:white;
+}
+
+.dataframe {
+    line-height: 2;
+    color:white;
+    border:2px solid white;
+    font-size:15px;
+    font-weight: bold;
+    padding-left: 3px;
+
+}
+
+.th, .td, th, td {
+    padding-left: 5px;
+}
+
+.latest_news_box {
+    margin-top:160px;
+    width:100%;
+    max-width:1350px;
+    height:auto;
+}
+
+.facts_box {
+    position:absolute;
+    z-index:1;
+    top:248px;
+    right:20px;
+    width:fit-content;
+    height: auto;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left:4px;
+    padding-right:4px;
+    border-radius:6px;
+    opacity: 80%;
+    background-color:black;
+}
+
+.featured_img_box {
+    position: relative;
+    top:auto;
+    left:20px;
+    right:20px;
+    width:100%;
+    max-width:850px;
+    height: auto;
+    background-color: transparent;
+}
+
+.mars_hemi_textbox h4 {
+    margin-top:50px;
+    width:100%;
+    max-width:1350px;
+    height:auto;    
+}
+}
+
+.gallery {
+    border:3px solid white;
+    margin-top:50px;
+}
+
+.gallery:hover {
+    border:3px solid yellow;
+}
+
+.gallery img {
+    width:100%;
+    height:auto;
+    padding-right:0px;
+    border-radius:6px;
+}
+
+.desc {
+    padding:15px;
+    color:white;
+    font-weight:bolder;
+    text-align:center;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float:left;
+    width:50%;
+    margin:6px 0;
+}
+
+@media only screen and (max-width:500px) {
+    .responsive {
+        width:100%;
+    }
+}

@@ -2,6 +2,7 @@ from splinter import Browser
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+import re
 #from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -22,10 +23,10 @@ def scrape_info():
     soup=BeautifulSoup(html,'html.parser')
     news_title=str(soup.find('div',{'class':['bottom_gradient']}))
     news_p=str(soup.find('div',{'class':['article_teaser_body']}))
-#    news_title=news_title.split('</h3>')[0]
-#    news_title=news_title.split('<h3>')[1]
-#    news_p=news_p.split('</div>')[0]
-#    news_p=news_p.split('>')[1]
+    ltitle=re.search('<h3>(.*?)</h3>',news_title)
+    ltitle=str(ltitle.group(1))
+    lparagraph=re.search('>(.*?)</div>',news_p)
+    lparagraph=str(lparagraph.group(1))
 
 # JPL Mars Space Images - Feature Image
 
@@ -90,9 +91,10 @@ def scrape_info():
  # Store data into dictionary --> mars_data
 
     mars_data = {
-        "newstitle":news_title,
-        "news_p":news_p,
+        "newstitle":ltitle,
+        "news_p":lparagraph,
         "fimageurl":featured_image_url,
+        "marsfacts":str(facts_html),
         "himageurls":hemisphere_image_urls
     }
  

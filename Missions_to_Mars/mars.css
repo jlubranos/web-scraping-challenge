@@ -1,0 +1,24 @@
+body{
+    background-image:url('mars-planet-animation-6.gif');
+    background-color: black;
+}
+
+.jumbotron {
+    margin-bottom:0px;
+    background-color:white;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top:5px;
+    margin-bottom:5px;
+    color:white;
+}
+
+.fixed_box {
+    position:fixed;
+    top:275x;
+    right:20px;
+    width:300px;
+    height:400px;
+    background-color: white;
+}

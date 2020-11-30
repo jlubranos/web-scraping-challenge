@@ -7,20 +7,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="{{ url_for('static', filename='mars.css') }}" rel="stylesheet">
 </head>
-
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Mission to Mars</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+      <h2><strong>Mission to Mars</strong></h2>
+      <p><a class="btn btn-primary btn-sm" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
-    <h3><strong>Latest Mars News</strong></h3>
-    <br>
-    <h5>{{ marsdata.newstitle }}</h5>
-    <h5>{{ marsdata.news_p }}</h5>
-  </div>
+    <div class="latest_news_box">
+      <h4><strong>Latest Mars News</strong></h4>
+      <h5>{{ marsdata.newstitle }}</h5>
+      <h6>{{ marsdata.news_p }}</h6>
+    </div>
+    <div class="facts_box">
+      <h4><strong>Mars Facts</h4></strong>
+       {{ marsdata.marsfacts|safe}}
+    </div>
+    <div class="featured_img_box">
+      <h4 style="color:white;"><strong>Featured Mars Image</strong></h4>
+      <div class="gallery">
+        <a target="_blank" href="{{ marsdata.fimageurl }}">
+          <img class="featured_img_box" src="{{ marsdata.fimageurl }}" alt="Featured Mars Image">
+        </a>
+      </div>
+    </div>
+    <div class="mars-hemi-textbox">
+      <h3 style="text-align:center; color:white"><strong>Mars Hemispheres</strong></h3>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="{{ marsdata.himageurls[0].url }}">
+          <img src="{{ marsdata.himageurls[0].url }}" alt="Url One" width="600" height="400">
+        </a>
+        <div class="desc">{{ marsdata.himageurls[0].title }}</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="{{ marsdata.himageurls[1].url }}">
+          <img src="{{ marsdata.himageurls[1].url }}" alt="Url One" width="600" height="400">
+        </a>
+        <div class="desc">{{ marsdata.himageurls[1].title }}</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="{{ marsdata.himageurls[2].url }}">
+          <img src="{{ marsdata.himageurls[2].url }}" alt="Url One" width="600" height="400">
+        </a>
+        <div class="desc">{{ marsdata.himageurls[2].title }}</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="{{ marsdata.himageurls[3].url }}">
+          <img src="{{ marsdata.himageurls[3].url }}" alt="Url One" width="600" height="400">
+        </a>
+        <div class="desc">{{ marsdata.himageurls[3].title }}</div>
+      </div>
+    </div>
   </div>
 </body>
-
 </html>
