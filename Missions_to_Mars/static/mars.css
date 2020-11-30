@@ -59,7 +59,7 @@ body {
     position:absolute;
     z-index:1;
     top:248px;
-    right:0px;
+    right:15px;
     width:fit-content;
     height: auto;
     padding-top:4px;
@@ -74,8 +74,8 @@ body {
 .featured_img_box {
     position: relative;
     top:auto;
-    left:20px;
-    right:20px;
+    left:0px;
+    right:0px;
     width:100%;
     max-width:850px;
     height: auto;
