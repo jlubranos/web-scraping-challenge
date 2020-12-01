@@ -20,34 +20,22 @@
       <h5>{{ marsdata.newstitle }}</h5>
       <h6>{{ marsdata.news_p }}</h6>
     </div>
-<div class="row">
-  <div class="col-sm-8">
-    <div class="featured_img_box">
-      <h4 style="color:white;"><strong>Featured Mars Image</strong></h4>
-      <div class="gallery">
-        <a target="_blank" href="{{ marsdata.fimageurl }}">
-          <img class="featured_img_box" src="{{ marsdata.fimageurl }}" alt="Featured Mars Image">
-        </a>
+    <div class="row">
+     <div class="col-sm-8">
+      <div class="featured_img_box">
+        <h4 style="color:white;"><strong>Featured Mars Image</strong></h4>
+        <div class="gallery">
+          <a target="_blank" href="{{ marsdata.fimageurl }}">
+           <img class="featured_img_box" src="{{ marsdata.fimageurl }}" alt="Featured Mars Image">
+          </a>
+        </div>
+       </div>
+      </div> 
+      <div class="col-sm-3">
+        <h4><strong>Mars Facts</h4></strong>
+        {{ marsdata.marsfacts|safe}}
       </div>
     </div>
-  </div> 
-  <div class="col-sm-3">
-<!--    <div class="facts_box"> -->
-      <h4><strong>Mars Facts</h4></strong>
-       {{ marsdata.marsfacts|safe}}
-<!--    </div> -->
-  </div>
-<!--  <div class="col-sm-8">
-    <div class="featured_img_box">
-      <h4 style="color:white;"><strong>Featured Mars Image</strong></h4>
-      <div class="gallery">
-        <a target="_blank" href="{{ marsdata.fimageurl }}">
-          <img class="featured_img_box" src="{{ marsdata.fimageurl }}" alt="Featured Mars Image">
-        </a>
-      </div>
-    </div>
-  </div> -->
-</div>
     <div class="mars-hemi-textbox">
       <h3 style="text-align:center; color:white"><strong>Mars Hemispheres</strong></h3>
     </div>
