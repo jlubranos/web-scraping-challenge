@@ -56,6 +56,7 @@ body {
 }
 
 .facts_box {
+    resize: both;
     position:absolute;
     z-index:1;
     top:248px;
