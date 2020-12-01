@@ -57,19 +57,8 @@ body {
 }
 
 .table, table {
-    position:fixed;
-    z-index:1;
-    top:auto;
-    right:15px;
-    width:fit-content;
-    height: auto;
-    padding-top:4px;
-    padding-bottom: 4px;
-    padding-left:4px;
-    padding-right:4px;
-    border-radius:6px;
+    background-color: black;
     opacity: 80%;
-    background-color:black;
 }
 
 .featured_img_box {
