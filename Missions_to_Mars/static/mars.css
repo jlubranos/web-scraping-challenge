@@ -50,16 +50,16 @@ body {
 
 .latest_news_box {
     margin-top:160px;
+    margin-bottom:20px;
     width:100%;
     max-width:1350px;
     height:auto;
 }
 
-.facts_box {
-    resize: both;
-    position:absolute;
+.table, table {
+    position:fixed;
     z-index:1;
-    top:248px;
+    top:auto;
     right:15px;
     width:fit-content;
     height: auto;
@@ -73,7 +73,6 @@ body {
 }
 
 .featured_img_box {
-    position: relative;
     top:auto;
     left:0px;
     right:0px;
@@ -89,11 +88,11 @@ body {
     max-width:1350px;
     height:auto;    
 }
-}
+
 
 .gallery {
+    border-radius:6px;
     border:3px solid white;
-    margin-top:50px;
 }
 
 .gallery:hover {
