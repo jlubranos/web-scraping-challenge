@@ -18,7 +18,7 @@ def scrape_info():
     browser=init_browser()
     url='https://mars.nasa.gov/news'
     browser.visit(url)
-    time.sleep(5)
+    time.sleep(10)
     html=browser.html
     soup=BeautifulSoup(html,'html.parser')
     news_title=str(soup.find('div',{'class':['bottom_gradient']}))
