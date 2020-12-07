@@ -3,7 +3,8 @@
 ![mars-planet-animation-6](Images/mars-planet-animation-6.gif)
 
 
-The app has the capability for the images to shrink as the screen size is minimized.
+The app has the capability for the images to shrink as the screen size is minimized as well as the heading to stay frozen on the screen
+as well as being somewhat transparent while the user scrolls up and down.
 
 ## Programs Utilized:
 
