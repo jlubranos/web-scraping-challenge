@@ -37,7 +37,8 @@ The app has the capability for the images to shrink as the screen size is minimi
 ![Screenshot11](Images/Screenshot11.png)
 ![Screenshot12](Images/Screenshot12.png)
 ![Screenshot13](Images/Screenshot13.png)
-
+![Screenshot14](Images/Screenshot14.png)
+![Screenshot15](Images/Screenshot15.png)
 
 
 
