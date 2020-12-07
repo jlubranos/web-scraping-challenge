@@ -87,6 +87,7 @@ def scrape_info():
             image_url['url']='https://astrogeology.usgs.gov' + str(image.get('src'))
             browser.back()
             hemisphere_image_urls.append(dict(image_url))
+    browser.quit()
 
  # Store data into dictionary --> mars_data
 
