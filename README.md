@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 # Mission to Mars 
 -----
 ![mars-planet-animation-6](Images/mars-planet-animation-6.gif)
 
 
-The app has the capability for the images to shrink as the screen size is minimized.
+The app has the capability for the images to shrink as the screen size is minimized as well as the heading to stay frozen on the screen
+as well as being somewhat transparent while the user scrolls up and down.
 
 ## Programs Utilized:
 
@@ -24,36 +24,28 @@ The app has the capability for the images to shrink as the screen size is minimi
 -----
 
 ![Screenshot1](Images/Screenshot1.png)
+
 ![Screenshot2](Images/Screenshot2.png)
+
 ![Screenshot3](Images/Screenshot3.png)
+
 ![Screenshot4](Images/Screenshot4.png)
+
 ![Screenshot5](Images/Screenshot5.png)
+
 ![Screenshot6](Images/Screenshot6.png)
+
 ![Screenshot7](Images/Screenshot7.png)
+
 ![Screenshot8](Images/Screenshot8.png)
+
 ![Screenshot9](Images/Screenshot9.png)
+
 ![Screenshot10](Images/Screenshot10.png)
+
 ![Screenshot11](Images/Screenshot11.png)
+
 ![Screenshot12](Images/Screenshot12.png)
+
 ![Screenshot13](Images/Screenshot13.png)
 
-
-
-
-
-
- 
-
-
-
-=======
-# web-scraping-challenge
-![mars-planet-animation-6](Images/mars-planet-animation-6.gif)![mars-planet-animation-6](Images/mars-planet-animation-6.gif)
-#### Programs utilized:
-
-      1. app.py - Flask Application.
-      2. scrape_mars.py Scraping Code
-      3. index.html html for Mars
-      4: mars.css css code for index.html
-      
->>>>>>> d4d9929f739bef447eb86061783d6a07c66b28f9
